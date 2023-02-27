@@ -35,3 +35,18 @@ dictionaryRus = {'А': '1', 'В': '1', 'Е': '1', 'И': '1', 'Н': '1', 'О': '1
                  'Ь': '3', 'Я': '3', 'Й': '4', 'Ы': '4', 'Ж': '5', 'З': '5',
                  'Х': '5', 'Ц': '5', 'Ч': '5', 'Ш': '8', 'Э': '8', 'Ю': '8',
                  'Ф': '10', 'Щ': '10', 'Ъ': '10'}
+
+word = str(input('Введите получившееся слово: ')).upper()
+score = 0
+
+for k, v in dictionaryEng.items():
+    for i in word:
+        if i == k:
+            score += int(v)
+
+for k, v in dictionaryRus.items():
+    for i in word:
+        if i == k:
+            score += int(v)
+
+print(f'Вы набрали {score} очков в игре Scrabble!!!')
