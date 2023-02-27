@@ -22,5 +22,11 @@ for i in array:
     if i-x == 1 or i-x == -1:
         number = i
 
+if x > array[-1]:
+    number = array[-1]
+
+if x < array[0]:
+    number = array[0]
+
 print(array)
 print(f'Ближайшим по величине элементом к числу {x} является {number} !!!')
