@@ -18,11 +18,10 @@ count = 0
 for i in range(1, n+1):
     array.append(i)
 
-print(array)
-
 for i in array:
     if i == x:
         count += 1
 
+print(array)
 print(f'Искомое число встречается в массиве {count} раз!!!')
 
